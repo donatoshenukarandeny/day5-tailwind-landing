@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>FocusFlow — Work with focus</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="min-h-screen bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-white"
+  >
+    <header
+      class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5"
+    >
+      <a href="#" class="text-2xl font-bold tracking-tight">
+        Focus<span class="text-blue-600">Flow</span>
+      </a>
+
+      <nav
+        aria-label="Main navigation"
+        class="hidden items-center gap-8 md:flex"
+      >
+        <a
+          href="#features"
+          class="text-sm text-slate-600 hover:text-blue-600 dark:text-slate-300"
+        >
+          Features
+        </a>
+        <a
+          href="#about"
+          class="text-sm text-slate-600 hover:text-blue-600 dark:text-slate-300"
+        >
+          About
+        </a>
+      </nav>
+
+      <a
+        href="#features"
+        class="rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+      >
+        Get Started
+      </a>
+
+      <button
+        id="theme-toggle"
+        type="button"
+        class="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800"
+        aria-label="Toggle dark mode"
+      >
+        Toggle theme
+      </button>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-6xl px-6 py-20 text-center md:py-28">
+        <p
+          class="mb-5 text-sm font-semibold uppercase tracking-widest text-blue-600"
+        >
+          Make every day count
+        </p>
+
+        <h1
+          class="mx-auto max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
+        >
+          Do your best work.
+          <span class="text-blue-600">Without the chaos.</span>
+        </h1>
+
+        <p
+          class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300"
+        >
+          Plan your projects, protect your focus, and turn big ideas into
+          meaningful progress.
+        </p>
+
+        <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+          <a
+            href="#features"
+            class="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700"
+          >
+            Start building
+          </a>
+          <a
+            href="#about"
+            class="rounded-lg border border-slate-300 px-6 py-3 font-semibold hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-900"
+          >
+            Learn more
+          </a>
+        </div>
+      </section>
+
+      <section id="features" class="mx-auto max-w-6xl px-6 pb-20">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <article
+            class="rounded-2xl border border-slate-200 p-6 shadow-sm dark:border-slate-800"
+          >
+            <div class="mb-4 text-2xl" aria-hidden="true">🎯</div>
+            <h2 class="text-xl font-semibold">Find your focus</h2>
+            <p class="mt-2 leading-7 text-slate-600 dark:text-slate-300">
+              Set clear priorities and give important work your full attention.
+            </p>
+          </article>
+
+          <article
+            class="rounded-2xl border border-slate-200 p-6 shadow-sm dark:border-slate-800"
+          >
+            <div class="mb-4 text-2xl" aria-hidden="true">📋</div>
+            <h2 class="text-xl font-semibold">Plan with clarity</h2>
+            <p class="mt-2 leading-7 text-slate-600 dark:text-slate-300">
+              Break complex projects into small, achievable steps.
+            </p>
+          </article>
+
+          <article
+            class="rounded-2xl border border-slate-200 p-6 shadow-sm dark:border-slate-800"
+          >
+            <div class="mb-4 text-2xl" aria-hidden="true">📈</div>
+            <h2 class="text-xl font-semibold">Track progress</h2>
+            <p class="mt-2 leading-7 text-slate-600 dark:text-slate-300">
+              See what you have accomplished and keep moving forward.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      id="about"
+      class="border-t border-slate-200 px-6 py-8 text-center text-sm text-slate-500 dark:border-slate-800"
+    >
+      Built with care by FocusFlow.
+    </footer>
+
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+
+      themeToggle.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
